@@ -15,49 +15,56 @@
 <body>
   <div class="container">
     <div class="weather-app">
-      <h4>
+      <h6>
         Vanilla Weather App
-      </h4>
+      </h6>
       <div class="container text-center">
         <div class="row">
-          <div class="col-6 col-sm-6">The weather in Dnipro 🌡</div>
-          <div class="col-6 col-sm-6"><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="sun" />
-            5 C° | °F</div>
-
-          <!-- Force next columns to break to new line -->
-          <div class="w-100"></div>
-
           <div class="col-6 col-sm-6">
-            <ul>
-              <li>
-                Friday 16:30
-              </li>
-              <li>
-                Cloudy
-              </li>
-            </ul>
+            <h2>
+              The weather in <strong>Dnipro</strong>
+            </h2>
+            <h5>
+              Friday 16:30
+            </h5>
           </div>
           <div class="col-6 col-sm-6">
             <ul>
               <li>
-                Humidity: 93%
-              </li>
-              <li>
-                Precipitation: 99%
-              </li>
-              <li>
-                Wind: 5 km/h
+                <div class="clearfix weather-temperature">
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="sun" class="float-left" />
+                  </br> Cloudy
+                  <div class="float-left"></div>
+                  <strong> 5 </strong>
+                  <div class="units">
+                    C° | <a href="#">°F</a>
+                  </div>
               </li>
             </ul>
           </div>
         </div>
+        <div class="col-6 col-sm-10">
+          <ul>
+            <li>
+              Humidity: 93%
+            </li>
+            <li>
+              Precipitation: 99%
+            </li>
+            <li>
+              Wind: 5 km/h
+            </li>
+          </ul>
+        </div>
       </div>
-      <small>
-        <a href="https://github.com/LinaMariiash/vanilla-weather-app" target="_blank">Open-source code </a>, by
-        Leniie Mariiash
-      </small>
     </div>
-    <script src="src/app.js"></script>
+  </div>
+  <small>
+    <a href="https://github.com/LinaMariiash/vanilla-weather-app" target="_blank">Open-source code </a>, by
+    Leniie Mariiash
+  </small>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 
 </html>
