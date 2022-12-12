@@ -41,9 +41,18 @@ function showTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+function search(city) {
+  let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
 
-let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
-let city = "Dnipro";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+search("Dnipro");
 
-axios.get(apiUrl).then(showTemperature);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
