@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-6 col-sm-6">
             <h2>
-              The weather in <strong>Dnipro</strong>
+              The weather in <strong id="city"></strong>
             </h2>
             <h5>
               Friday 16:30
@@ -33,13 +33,16 @@
             <ul>
               <li>
                 <div class="d-flex weather-temperature">
-                  <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="clear" id="icon" />
-                  </br> Cloudy
-                  <div class="float-left"></div>
-                  <strong> 5 </strong>
-                  <div class="units">
-                    C° | <a href="#">°F</a>
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="Clear" id="icon" />
+                  <div>
+                    <strong id="temperature"></strong><span class="units"></span>
+                    <div class="units">
+                      °C | <a href="#"> °F</a>
+                      <br>
+                      <span id="description"></span>
+                    </div>
                   </div>
+
               </li>
             </ul>
           </div>
@@ -47,15 +50,10 @@
         <div class="col-6 col-sm-12">
           <ul>
             <li>
-              Humidity: 93%
+              Humidity: <span id="humidity"></span>%
             </li>
             <li>
-              Precipitation: 99%
-            </li>
-            <li>
-              Wind: 5 km/h
-            </li>
-            <li>
+              Wind: <span id="wind"></span>km/h
             </li>
           </ul>
           <hr />

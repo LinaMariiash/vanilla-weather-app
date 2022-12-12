@@ -1,2 +1,18 @@
+function showTemperature(response) {
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+}
+
 let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=${apiKey}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dnipro&appid=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(showTemperature);
