@@ -4,7 +4,6 @@ body {
 li {
   list-style: none;
   text-align: center;
-  text-transform: capitalize;
 }
 ul {
   margin: 0;
@@ -13,6 +12,9 @@ ul {
 h2,
 h5 {
   text-align: left;
+}
+li.first-letter {
+  text-transform: capitalize;
 }
 .weather-app {
   max-width: 800px;
