@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <link rel="stylesheet" href="src/style.css" />
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,8 +32,8 @@
           <div class="col-6 col-sm-6">
             <ul>
               <li>
-                <div class="clearfix weather-temperature">
-                  <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="sun" class="float-left" />
+                <div class="d-flex weather-temperature">
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="clear" id="icon" />
                   </br> Cloudy
                   <div class="float-left"></div>
                   <strong> 5 </strong>
