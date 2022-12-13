@@ -24,14 +24,14 @@ li.first-letter {
   max-height: fit-content;
   margin: 40px auto;
   padding: 20px;
-  border: 1px solid #ab96db;
+  border: 1px solid white;
   border-radius: 30px;
-  background-color: #ab96db;
+  background-color: #c6f9d6;
 }
 .weather-temperature {
   border-radius: 30px;
-  border: 1px solid #fefcd3;
-  background-color: #ab96db;
+  border: 1px solid #c6f9d6;
+  background-color: #c6f9d6;
   padding: 30px 10px;
 }
 .weather-temperature img {
