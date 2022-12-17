@@ -44,8 +44,9 @@ li.first-letter {
   font-size: 70px;
   line-height: 1;
 }
-.weather-temperature span {
+.weather-temperature span,
+h4 {
   list-style: none;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
 }
