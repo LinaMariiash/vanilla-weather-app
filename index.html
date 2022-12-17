@@ -32,7 +32,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-6 col-sm-6">
-            <h2>
+            <h2>📍
               <strong id="city"></strong>
               <hr />
               <h4 id="description"></h4>
@@ -51,38 +51,47 @@
             </h7>
           </div>
           <div class="col-6 col-sm-6">
-            <ul>
-              <li>
-                <div class="d-flex weather-temperature">
-                  <img src="" alt="Clear" id="icon" />
-                  <div>
-                    <strong id="temperature"></strong><span class="units"></span>
-                    <span class="units">
-                      <a href="#" id="celsius-link">°C</a>
-                      | <a href="#" id="fahrenheit-link">°F</a>
+            <div class="d-flex weather-temperature">
+              <img src="" alt="Clear" id="icon" />
+              <div>
+                <strong id="temperature"></strong>
+                <div class="units">
+                  <a href="#" id="celsius-link">°C</a>
+                  | <a href="#" id="fahrenheit-link">°F</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-forecast">
+            <div class="row-2">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="80px" />
+                  </div>
+                  <div class="col">
+                    <span class="weather-forecast-date">
+                      Sat
                     </span>
                   </div>
-              </li>
-            </ul>
+                  <div class="col">
+                    <span class="weather-forecast-temperature">
+                      10°
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <small>
+                <a href="https://github.com/LinaMariiash/vanilla-weather-app" target="_blank">Open-source code </a>, by
+                Leniie Mariiash
+              </small>
+            </div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="row-2">Sat
-            <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" />
-          </div>
-          <div class="col"></div>
-        </div>
-        <hr />
-        <small>
-          <a href="https://github.com/LinaMariiash/vanilla-weather-app" target="_blank">Open-source code </a>, by
-          Leniie Mariiash
-        </small>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <script src="src/app.js"></script>
+    <script src="src/app.js"></script>
 </body>
 
 </html>

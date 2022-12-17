@@ -1,15 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-li {
-  list-style: none;
-  text-align: center;
-  padding-top: 10px;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
 h2,
 h5,
 h4 {
@@ -18,9 +9,7 @@ h4 {
 h6 {
   text-align: center;
 }
-li.first-letter {
-  text-transform: capitalize;
-}
+
 .weather-app {
   max-width: 800px;
   max-height: fit-content;
@@ -34,7 +23,8 @@ li.first-letter {
   border-radius: 30px;
   border: 1px solid #fefcd3;
   background-color: #fefcd3;
-  padding: 30px 10px;
+  padding: 10px 10px;
+  max-width: 250px;
 }
 
 .weather-temperature img {
@@ -44,9 +34,15 @@ li.first-letter {
   font-size: 70px;
   line-height: 1;
 }
-.weather-temperature span,
-h4 {
-  list-style: none;
-  text-align: left;
-  text-transform: capitalize;
+.weather-forecast {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.weather-forecast-date {
+  font-size: 35px;
+}
+.weather-forecast-temperature {
+  font-size: 35px;
 }
