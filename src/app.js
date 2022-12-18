@@ -24,16 +24,17 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = "";
-  forecastHTML =
-    forecastHTML +
-    `
-  <div class="row-2">
-              <div class="container text-center">
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+
+  let forecastHTML = `<div class="row-2">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `         <div class="container text-center">
                 <div class="row">
                   <div class="col">
                     <span class="weather-forecast-date">
-                      Sat
+                      ${day}
                     </span>
                   </div>
                   <div class="col">
@@ -41,14 +42,19 @@ function displayForecast() {
                   </div>
                   <div class="col">
                     <span class="weather-forecast-temperature">
-                      10°
+                      12°
                     </span>
                   </div>
                 </div>
               </div>
-            </div>
+            
+      
   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
 }
 
 function showTemperature(response) {
@@ -73,6 +79,8 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  console.log(response.data);
 }
 function search(city) {
   let apiKey = "8402ccd9e55983fce71eeeaa1d2bd1fc";
