@@ -21,6 +21,36 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = "";
+  forecastHTML =
+    forecastHTML +
+    `
+  <div class="row-2">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <span class="weather-forecast-date">
+                      Sat
+                    </span>
+                  </div>
+                  <div class="col">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="60px" />
+                  </div>
+                  <div class="col">
+                    <span class="weather-forecast-temperature">
+                      10°
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  `;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -81,3 +111,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Dnipro");
+displayForecast();

@@ -25,6 +25,7 @@ h6 {
   background-color: #fefcd3;
   padding: 10px 10px;
   max-width: 250px;
+  margin: auto;
 }
 
 .weather-temperature img {
@@ -36,13 +37,17 @@ h6 {
 }
 .weather-forecast {
   text-align: center;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.weather-forecast :hover {
+  background: #fefcd3;
+  border: 1px solid 10px;
+  border-radius: 20px;
+  transition: all 200ms linear;
 }
 
-.weather-forecast-date {
-  font-size: 35px;
-}
+.weather-forecast-date,
 .weather-forecast-temperature {
-  font-size: 35px;
+  font-size: 30px;
 }
