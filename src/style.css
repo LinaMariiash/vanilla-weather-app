@@ -1,5 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/flickr/14718892840_10bba8ff6d_o.jpg?fit=3774%2C2536&ssl=1");
+  background-size: cover;
 }
 h2,
 h5,
@@ -17,12 +19,14 @@ h6 {
   padding: 20px;
   border: 1px solid white;
   border-radius: 30px;
-  background-color: #c6f9d6;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.41);
 }
 .weather-temperature {
   border-radius: 30px;
-  border: 1px solid #fefcd3;
-  background-color: #fefcd3;
+  border: 1px solid #ffff;
+  background-color: #2874af;
+  background-color: rgba(255, 255, 255, 0.41);
   padding: 10px 10px;
   max-width: 250px;
   margin: auto;
@@ -39,7 +43,9 @@ h6 {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background: #fefcd3;
+  background: #2874af;
+  border: 1px solid #ffff;
+  background-color: rgba(255, 255, 255, 0.41);
   border-radius: 30px;
   padding-top: 20px;
 }
