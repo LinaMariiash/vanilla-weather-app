@@ -11,7 +11,7 @@ h6 {
 }
 
 .weather-app {
-  max-width: 800px;
+  max-width: 900px;
   max-height: fit-content;
   margin: 40px auto;
   padding: 20px;
@@ -39,12 +39,13 @@ h6 {
   text-align: center;
   margin: 10px;
   padding: 10px;
-}
-.weather-forecast :hover {
   background: #fefcd3;
+  border-radius: 30px;
+  padding-top: 20px;
 }
 
 .weather-forecast-date,
 .weather-forecast-temperature {
   font-size: 30px;
+  text-align: right;
 }
